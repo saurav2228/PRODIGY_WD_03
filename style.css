@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(9, 217, 236);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #15a662;
+    border: 2px solid #ca0505;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cell.taken {
+    cursor: not-allowed;
+  }
+  
+  #result-message {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #result-message h2 {
+    margin-bottom: 10px;
+    color: #ae0a0a;
+  }
+  
+  #restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #restart-button:hover {
+    background-color: #0056b3;
+  }
+  
